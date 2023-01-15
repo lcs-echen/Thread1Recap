@@ -38,8 +38,8 @@ struct Book {
     let typeOfTheBook: String
     let pagenumber: Int
     let thickness: Double
-    let copiesNumber: Double
-    let shelfSpaceAvailable: Double
+    var copiesNumber: Double
+    var shelfSpaceAvailable: Double
     var shelfSpaceNeeded: Double {
         return copiesNumber * thickness
     }
@@ -47,5 +47,7 @@ struct Book {
         return shelfSpaceAvailable / thickness
     }
 }
+
+let book1 = Book(bookName: <#T##String#>, author: <#T##String#>, numberOfEdition: <#T##String#>, typeOfTheBook: <#T##String#>, pagenumber: <#T##Int#>, thickness: <#T##Double#>, copiesNumber: <#T##Double#>, shelfSpaceAvailable: <#T##Double#>)
 
 
